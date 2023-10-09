@@ -31,6 +31,8 @@ export type TrackOptions = {
   fadeInEnd?: number
   fadeOutStart?: number
   volume?: number
+  barWidth?: number
+  barRadius?: number
   markers?: Array<{
     time: number
     label?: string
@@ -45,6 +47,7 @@ export type TrackOptions = {
 }
 
 export type MultitrackOptions = {
+  media?: HTMLElement
   container: HTMLElement
   minPxPerSec?: number
   cursorColor?: string
